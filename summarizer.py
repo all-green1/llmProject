@@ -16,7 +16,7 @@ peft_model_base = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
 
 peft_model = PeftModel.from_pretrained(
-    peft_model_base, "C:/Users/Acer1/PycharmProjects/pythonProject/checkpoint-1000"
+    peft_model_base, "C:/Users/Acer1/PycharmProjects/pythonProject/llmApp/checkpoint-1000"
 ).to(torch_device)
 
 
